@@ -1,16 +1,16 @@
 programa
 {
+//que leia o nome, disciplina e marque 4 notas e no final me de a média do aluno
 	
 	funcao inicio()
-	{ real horaNormal, horaExtra, salarioAnual
-	     
-		escreva("Digite o número de horas trabalhadas no ano:")
-		leia(horaNormal)
-		escreva("Digite o número de horas extras trabalhadas no ano:")
-		leia(horaExtra)
-		salarioAnual = (horaNormal * 10.00) + (horaExtra * 15.00)
-		escreva("E o Salario Anual deste trabalhador é de:" + salarioAnual +"\n")
-	
+	{
+		cadeia nome, disc
+		inteiro n1, n2, n3, n4, media
+
+		escreva("Escreva aqui seu nome, sua disciplina e suas 4 notas: ")
+		leia(nome, disc, n1, n2, n3, n4)
+		media = (n1+n2+n3+n4)/4
+		escreva(nome, " sua média na materia de ", disc, " é de ", media)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -18,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 78; 
+ * @POSICAO-CURSOR = 304; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

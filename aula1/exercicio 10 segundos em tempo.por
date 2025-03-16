@@ -1,14 +1,18 @@
 programa
 {
+//Rode um programa que leia o tempo em segundos e transforme em hora, minutos e segundos
 	
 	funcao inicio()
 	{
-	 inteiro numero, antecessor, sucessor
-	        escreva("escreva um numero:")
-	        leia(numero)
-	        antecessor = numero - 1
-	        sucessor = numero + 1
-	        escreva("o numero antecessor é:" + antecessor +" e o numero sucessor é:"+ sucessor +"\n")
+		inteiro horas, minutos, segundos, tempo, resto
+
+		escreva("Digite aqui o tempo em segundos: ")
+		leia(tempo)
+	     horas = tempo/3600
+	     resto = tempo%3600
+	     minutos = resto/60
+	     segundos = resto%60
+	     escreva(horas, " : ", minutos, " : ", segundos)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -16,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 8; 
+ * @POSICAO-CURSOR = 392; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,18 +1,18 @@
 programa
 {
-	
+//9) Faça um algoritmo que leia um número e retorne como resposta se ele é par ou impar
 	funcao inicio()
 	{
-	 caracter nome, disciplina
-	  real nota1, nota2, nota3, nota4, media
-	        escreva("nome do aluno:")
-	        leia(nome)
-	        escreva("disciplina:")
-	        leia(disciplina)
-	        escreva("digite as quatro notas:")
-	        leia(nota1, nota2, nota3, nota4)
-	        media = (nota1 + nota2 + nota3 + nota4) / 4
-	        escreva("A media de " + nome + " na disciplina de " + disciplina + " é " + media +"\n")
+		inteiro num
+
+		escreva("Digite um número: ")
+		leia(num)
+
+		se(num %2 == 0){
+			escreva("PAR")
+		}senao{
+			escreva("IMPAR")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 

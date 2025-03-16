@@ -1,18 +1,20 @@
 programa
 {
-	
+//1) Leia um número e retorne como resposta se ele é positivo, negativo ou zero.
 	funcao inicio()
-	{inteiro num1, num2, num3, num4, media
-		escreva("digite suas 4 notas:")
-		leia(num1)
-		leia(num2)
-		leia(num3)
-		leia(num4)
-		media = (num1+num2+num3+num4)/4
-		se(media <6){
-			escreva ("reprovado")
+	{
+		inteiro num, neg, z
+		z = 0
+		
+		escreva("Digite um número: ")
+		leia(num)
+
+		se(num == z){
+			escreva("O número é Zero")
+		}senao se(num <=-1){
+			escreva("Negativo")
 		}senao{
-escreva ("aprovado")
+			escreva("Positivo")
 		}
 	}
 }
@@ -21,7 +23,7 @@ escreva ("aprovado")
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 271; 
+ * @POSICAO-CURSOR = 319; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

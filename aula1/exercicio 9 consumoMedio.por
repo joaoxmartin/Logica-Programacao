@@ -1,26 +1,25 @@
 programa
 {
+//Calcule o consume médio de combústivel de um veiculo que percorreu certa distancia em km
 	
 	funcao inicio()
 	{
-		inteiro horas, minutos, segundos, tempo, resto
-		escreva("Digite o tempo em segundos: ")
-          leia(tempo)
-          horas = tempo/3600
-          resto = tempo%3600
-          minutos = resto /60
-          segundos = resto %60
-          escreva(" o tempo desses segundos é de:",horas,":",minutos,":",segundos)
-	}
+		real consM, combustivel, distancia
 
-   
+		escreva("Qual distancia o veiculo percorreu: ")
+		leia(distancia)
+		escreva("Quanto de combustivel ele gastou: ")
+		leia(combustivel)
+		consM = distancia/combustivel
+		escreva(" O consumo médio deste veiculo é de ", consM)
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 355; 
+ * @POSICAO-CURSOR = 391; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
