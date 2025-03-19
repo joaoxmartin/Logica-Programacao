@@ -1,15 +1,15 @@
 programa
 {
-	
+
 	funcao inicio()
 	{
-		inteiro x, y
+		inteiro y
 
 			escreva("Digite um número: ")
 			leia(y)
 			
-		para(x=1;x<=10;x++){
-			escreva(x, " X ", y, " = ", x*y,"\n")
+		para(inteiro x=1;x<=10;x++){
+			escreva(y, " X ", x, " = ", x*y,"\n")
 			
 		}
 	}
@@ -19,7 +19,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 169; 
+ * @POSICAO-CURSOR = 146; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

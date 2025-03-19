@@ -1,13 +1,10 @@
 programa
 {
-	
-	funcao inicio()
-	{
-		inteiro numero, totalPar=0, totalImpar=0, totalGeral
+	funcao inicio(){
+		inteiro numero, totalPar=0, totalImpar=0
 		escreva("Digite um nº ")
 		leia(numero)
 		limpa()
-		totalGeral = totalPar + totalImpar
 		enquanto(numero > 0){
            se(numero %2 == 0){
            	escreva("\nPar ")
@@ -20,9 +17,9 @@ programa
 		 leia(numero)
 		 limpa()
 		}
-		escreva("\nTotal Geral: " + totalGeral)
-		escreva("\nTotal Geral: " + totalImpar)
-		escreva("\nTotal Geral: " + totalPar)
+		escreva("\nTotal Geral: ", totalPar+totalImpar)
+		escreva("\nTotal Impar: ", totalImpar)
+		escreva("\nTotal Par: ", totalPar)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 461; 
+ * @POSICAO-CURSOR = 208; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

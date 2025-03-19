@@ -1,21 +1,20 @@
 programa
 {
 	inclua biblioteca Util --> U
+	
 	funcao inicio()
 	{
-	         inteiro contador = 10
-	        
-
-	         enquanto(contador > 0){
-	         	   limpa()
-	         	   //contador = contador - 1
-	         	   //contador -= 1
-	         	   escreva("Detonão em:" + contador)
-	         	   contador--
-	         	   U.aguarde(1000)
-	         }
-                  limpa()
-                  escreva("Booom!")
+		inteiro num = 0
+		sorteio(num)
+		escreva("Número:", num, "\n")
+		exibe(num)
+	}
+	funcao sorteio(inteiro &n){
+	}
+	funcao exibe(inteiro n){
+		escreva(n,"\n")
+		//n= 50
+		//escreva(n)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 133; 
+ * @POSICAO-CURSOR = 177; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
